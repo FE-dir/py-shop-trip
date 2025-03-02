@@ -24,7 +24,7 @@ class Customer:
     def choose_best_shop(self, shops: list[Shop],
                          fuel_price: float) -> Shop | None:
         best_shop = None
-        best_price = float('inf')
+        best_price = float("inf")
         for shop in shops:
             trip_cost = self.calculate_trip_cost(shop, fuel_price)
             if trip_cost is not None and trip_cost < best_price:
